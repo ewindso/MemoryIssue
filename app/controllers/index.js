@@ -8,6 +8,7 @@ $.index.add($.view.getView());
 function removeViewAndClose() {
 	// this attempts to remove items from the window before closing it
 	$.index.remove($.view.getView());
+	$.view = null;
 
 	$.index.close(); 
 }
